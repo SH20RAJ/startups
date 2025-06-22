@@ -28,7 +28,7 @@ export default function Home() {
           </h1>
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed">
             Welcome to my entrepreneurial journey. From AI-powered content creation to mindful wellness companions, 
-            each venture represents a passionate pursuit of innovation. Currently building <span className="font-semibold text-primary">5 startups</span> 
+            each venture represents a passionate pursuit of innovation. Currently building <span className="font-semibold text-primary">5+ startups</span> 
             that solve real problems and create meaningful impact across diverse industries.
           </p>
           <div className="mt-6 flex flex-wrap gap-3 justify-center">
