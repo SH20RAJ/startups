@@ -1,103 +1,101 @@
-import Image from "next/image";
+import FounderProfile from "@/components/FounderProfile";
+import StartupCard from "@/components/StartupCard";
+
+// Mock data for the founder and startups
+const founderData = {
+  name: "Sarah Chen",
+  title: "Serial Entrepreneur & Investor",
+  bio: "Passionate about building innovative technologies that solve real-world problems. 10+ years of experience in tech entrepreneurship with 3 successful exits.",
+  avatar: "/next.svg", // Using available placeholder
+  location: "San Francisco, CA",
+  email: "sarah@example.com",
+  linkedin: "https://linkedin.com/in/sarahchen",
+  twitter: "https://twitter.com/sarahchen",
+  totalFunding: "$50M+",
+  successfulExits: 3,
+  yearsExperience: 12
+};
+
+const startups = [
+  {
+    id: 1,
+    name: "TechFlow AI",
+    description: "AI-powered workflow automation platform helping businesses streamline their operations.",
+    status: "Active",
+    founded: "2023",
+    funding: "$15M Series A",
+    employees: "45-50",
+    industry: "AI/ML",
+    logo: "/next.svg",
+    website: "https://techflow.ai",
+    achievements: ["YC W23", "Forbes 30 Under 30", "Best AI Startup 2024"]
+  },
+  {
+    id: 2,
+    name: "GreenEnergy Solutions",
+    description: "Renewable energy management system for commercial buildings.",
+    status: "Acquired",
+    founded: "2020",
+    funding: "$8M Series A",
+    employees: "25-30",
+    industry: "CleanTech",
+    logo: "/globe.svg",
+    website: "https://greenenergy.com",
+    achievements: ["Acquired by Tesla 2022", "Carbon Neutral Certified", "LEED Platinum"]
+  },
+  {
+    id: 3,
+    name: "HealthTrack Pro",
+    description: "Digital health platform connecting patients with healthcare providers.",
+    status: "Active",
+    founded: "2021",
+    funding: "$12M Seed",
+    employees: "30-35",
+    industry: "HealthTech",
+    logo: "/vercel.svg",
+    website: "https://healthtrack.pro",
+    achievements: ["FDA Approved", "HIPAA Compliant", "500K+ Active Users"]
+  },
+  {
+    id: 4,
+    name: "EduTech Labs",
+    description: "Personalized learning platform for K-12 education.",
+    status: "Sold",
+    founded: "2018",
+    funding: "$5M Seed",
+    employees: "15-20",
+    industry: "EdTech",
+    logo: "/file.svg",
+    website: "https://edutech.labs",
+    achievements: ["Sold to Pearson 2021", "1M+ Students", "Award-winning Platform"]
+  }
+];
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        {/* Header */}
+        <FounderProfile founder={founderData} companiesCount={startups.length} />
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+        {/* Startups Section */}
+        <div className="mb-8">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
+            Portfolio Companies
+          </h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {startups.map((startup) => (
+              <StartupCard key={startup.id} startup={startup} />
+            ))}
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        
+        {/* Footer */}
+        <div className="text-center text-gray-500 dark:text-gray-400">
+          <p>© 2024 {founderData.name}. All rights reserved.</p>
+        </div>
+      </div>
     </div>
   );
 }
