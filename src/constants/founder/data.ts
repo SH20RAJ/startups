@@ -2,18 +2,54 @@ import { FounderData, Startup } from '@/types';
 
 export const FOUNDER_DATA: FounderData = {
   name: "Shaswat Raj",
-  title: "Serial Entrepreneur & Full-Stack Developer",
-  bio: "Passionate innovator building transformative technologies that solve real-world problems. Creator of multiple successful AI-powered platforms with expertise in modern web technologies, product development, and user experience design.",
-  avatar: "/next.svg",
-  location: "India",
+  title: "Full Stack Developer & Open Source Enthusiast",
+  bio: "With over 4 years of development experience, I've worked across the entire technology stack, from creating intuitive frontends with React and Next.js to designing scalable backends with Node.js. I'm deeply committed to open source and have contributed to numerous projects that help the developer community. My approach combines technical excellence with creative problem-solving to deliver exceptional digital experiences.",
+  avatar: "https://shaswat.live/_next/image?url=%2Fprofile.jpg&w=640&q=75",
+  location: "Jharkhand, India",
   email: "sh20raj@gmail.com",
-  linkedin: "https://linkedin.com/in/shaswatraj",
+  linkedin: "https://linkedin.com/in/sh20raj",
   twitter: "https://twitter.com/SH20RAJ",
+  github: "https://github.com/sh20raj",
+  website: "https://shaswat.live",
+  resume: "https://docs.google.com/document/d/1_c8_1teca5JlCIFnsSC0rqoHcvxD5VJrlE-DeKZSXf4/edit?usp=sharing",
+  codepen: "https://codepen.io/sh20raj",
+  devto: "https://dev.to/sh20raj",
   totalFunding: "$2M+",
   successfulExits: 0,
-  yearsExperience: 5,
+  yearsExperience: 4,
   totalValuation: "$15M+",
-  companiesActive: 5
+  companiesActive: 5,
+  skills: [
+    "JavaScript (8+ years, 95%)",
+    "TypeScript (5+ years, 90%)",
+    "HTML (10+ years, 98%)",
+    "CSS (10+ years, 95%)",
+    "React & Next.js",
+    "Node.js",
+    "PHP (7+ years, 85%)",
+    "Python (4+ years, 80%)",
+    "C (3+ years, 75%)",
+    "C++ (2+ years, 70%)"
+  ],
+  specializations: [
+    "Full-Stack Development",
+    "Frontend Architecture",
+    "Backend Development",
+    "UI/UX Design",
+    "Open Source Development",
+    "Technical Writing"
+  ],
+  values: [
+    "Clean, maintainable code that solves real problems",
+    "Continuous learning and sharing knowledge",
+    "Creating accessible, user-friendly interfaces",
+    "Excellence in every project undertaken"
+  ],
+  projects: "50+",
+  availability: "Open to opportunities",
+  remoteWork: "Available worldwide",
+  interests: ["Coffee enthusiast", "Podcast listener", "Lifelong learner", "Remote work advocate", "Tech collector"],
+  quote: "I believe that great software is born at the intersection of technical excellence and thoughtful user experience. My goal is to create digital products that not only work flawlessly but also bring joy to those who use them."
 };
 
 export const STARTUPS_DATA: Startup[] = [

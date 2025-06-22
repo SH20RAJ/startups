@@ -7,11 +7,24 @@ export interface FounderData {
   email: string;
   linkedin: string;
   twitter: string;
+  github?: string;
+  website?: string;
+  resume?: string;
+  codepen?: string;
+  devto?: string;
   totalFunding: string;
   successfulExits: number;
   yearsExperience: number;
   totalValuation: string;
   companiesActive: number;
+  skills?: string[];
+  specializations?: string[];
+  values?: string[];
+  projects?: string;
+  availability?: string;
+  remoteWork?: string;
+  interests?: string[];
+  quote?: string;
 }
 
 export type StartupPhase = 'ideation' | 'building' | 'fundraising' | 'active' | 'exited' | 'paused';

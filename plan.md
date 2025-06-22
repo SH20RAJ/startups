@@ -97,8 +97,13 @@
 - ✅ `/startups/unistory` - Unistory social platform information
 
 ### 👤 Updated Founder Profile:
-- ✅ **Shaswat Raj**: Serial entrepreneur and full-stack developer
-- ✅ **Real Contact**: sh20raj@gmail.com, Twitter @SH20RAJ
+- ✅ **Shaswat Raj**: Full Stack Developer & Open Source Enthusiast
+- ✅ **Experience**: 4+ years of development experience across the entire tech stack
+- ✅ **Skills**: JavaScript, TypeScript, React, Next.js, Node.js, PHP, Python, HTML, CSS
+- ✅ **Portfolio**: 50+ completed projects, available for freelance opportunities
+- ✅ **Real Contact**: sh20raj@gmail.com, Twitter @SH20RAJ, LinkedIn /in/sh20raj
+- ✅ **Website**: https://shaswat.live (integrated bio and details from live website)
+- ✅ **Location**: Jharkhand, India
 - ✅ **Portfolio Stats**: 5 active companies, $2M+ funding, $15M+ valuation
 
 ### Ready for Production:
