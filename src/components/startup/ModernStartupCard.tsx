@@ -11,7 +11,6 @@ import {
   Building,
   Lightbulb,
   Zap,
-  Play,
   Pause,
   CheckCircle,
   Heart
@@ -20,10 +19,9 @@ import { Startup } from "@/types";
 
 interface ModernStartupCardProps {
   startup: Startup;
-  onViewDetails: (id: number) => void;
 }
 
-export default function ModernStartupCard({ startup, onViewDetails }: ModernStartupCardProps) {
+export default function ModernStartupCard({ startup }: ModernStartupCardProps) {
   const getPhaseInfo = (phase: string) => {
     const phases = {
       'ideation': {

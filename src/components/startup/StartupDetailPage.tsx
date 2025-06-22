@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { ArrowLeft, ExternalLink, MapPin, Users, Calendar, DollarSign, TrendingUp, Download, Mail, Phone } from 'lucide-react';
+import { ArrowLeft, ExternalLink, MapPin, Users, Calendar, DollarSign, TrendingUp, Download } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import { Startup } from '@/types';
 import Image from 'next/image';

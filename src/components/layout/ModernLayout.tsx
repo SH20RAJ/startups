@@ -23,7 +23,7 @@ export default function ModernLayout({ founder, children }: ModernLayoutProps) {
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
       {/* Fixed Navbar */}
-      <Navbar onMenuClick={toggleSidebar} isSidebarOpen={isSidebarOpen} />
+      <Navbar onMenuClick={toggleSidebar} />
 
       {/* Fixed Sidebar */}
       <ModernSidebar

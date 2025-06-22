@@ -1,5 +1,6 @@
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, MapPin, Mail, Linkedin, Twitter, TrendingUp, Target, Award, Calendar, Building, ExternalLink, Code, User, Github, FileText, Coffee, Heart, Quote } from 'lucide-react';
+import { X, MapPin, Mail, Linkedin, Twitter, TrendingUp, Target, Award, Calendar, Building, ExternalLink, Code, User, Github, FileText, Heart, Quote } from 'lucide-react';
+import Image from 'next/image';
 import { FounderData } from '@/types';
 
 interface ModernSidebarProps {
@@ -37,9 +38,11 @@ export default function ModernSidebar({ founder, isOpen, onClose }: ModernSideba
                 className="text-center border-b border-gray-100 dark:border-gray-800 pb-6"
               >
                 <div className="relative mb-4">
-                  <img
+                  <Image
                     src={founder.avatar}
                     alt={founder.name}
+                    width={80}
+                    height={80}
                     className="w-20 h-20 mx-auto rounded-2xl object-cover shadow-lg"
                     onError={(e) => {
                       // Fallback to gradient background with initials
@@ -198,7 +201,7 @@ export default function ModernSidebar({ founder, isOpen, onClose }: ModernSideba
                   <div className="flex items-start gap-3">
                     <Quote size={16} className="text-purple-600 dark:text-purple-400 mt-1 flex-shrink-0" />
                     <p className="text-sm text-purple-800 dark:text-purple-200 italic leading-relaxed">
-                      "{founder.quote}"
+                      &ldquo;{founder.quote}&rdquo;
                     </p>
                   </div>
                 </div>
@@ -342,9 +345,11 @@ export default function ModernSidebar({ founder, isOpen, onClose }: ModernSideba
               {/* Mobile content - same structure as desktop */}
               <div className="text-center border-b border-gray-100 dark:border-gray-800 pb-6">
                 <div className="relative mb-4">
-                  <img
+                  <Image
                     src={founder.avatar}
                     alt={founder.name}
+                    width={80}
+                    height={80}
                     className="w-20 h-20 mx-auto rounded-2xl object-cover shadow-lg"
                     onError={(e) => {
                       const target = e.target as HTMLImageElement;

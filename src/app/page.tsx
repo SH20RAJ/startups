@@ -1,28 +1,17 @@
 'use client';
 
-import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FOUNDER_DATA, STARTUPS_DATA } from '@/constants';
 import { useStartupFilters } from '@/hooks';
 import ModernLayout from '@/components/layout/ModernLayout';
-import ModernFilters from '@/components/filters/ModernFilters';
 import ModernStartupCard from '@/components/startup/ModernStartupCard';
-import { StartupPhase } from '@/types';
 
 export default function Home() {
   const {
     filteredStartups,
-    filters,
-    setPhaseFilter,
-    setIndustryFilter,
-    setFundingStageFilter,
-    setNeedsFundingFilter,
-    setSearchQuery,
     clearAllFilters,
     activeFiltersCount,
   } = useStartupFilters({ startups: STARTUPS_DATA });
-
-  const [selectedStartup, setSelectedStartup] = useState<number | null>(null);
 
   return (
     <ModernLayout founder={FOUNDER_DATA}>
@@ -128,7 +117,6 @@ export default function Home() {
                 >
                   <ModernStartupCard
                     startup={startup}
-                    onViewDetails={(id) => setSelectedStartup(id)}
                   />
                 </motion.div>
               ))}

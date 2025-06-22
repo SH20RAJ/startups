@@ -1,8 +1,7 @@
-import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { Mail, MapPin, Linkedin, Twitter, User } from 'lucide-react';
+import { Mail, MapPin, Linkedin, Twitter } from 'lucide-react';
 import { FounderData } from '@/types';
-import { generateInitials, cn } from '@/utils';
+import { generateInitials } from '@/utils';
 
 interface FounderProfileSidebarProps {
   founder: FounderData;

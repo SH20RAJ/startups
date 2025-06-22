@@ -2,7 +2,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { ExternalLink, Calendar, Users, DollarSign, Building } from "lucide-react";
 import { Startup } from "@/types";
-import { getStatusColor, cn } from "@/utils";
+import { getPhaseColor, capitalizePhase, cn } from "@/utils";
 
 interface StartupCardProps {
   startup: Startup;
@@ -35,8 +35,8 @@ export default function StartupCard({ startup, index = 0 }: StartupCardProps) {
             <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-1">
               {startup.name}
             </h3>
-            <span className={cn("inline-block px-2 py-1 rounded-full text-xs font-medium", getStatusColor(startup.status))}>
-              {startup.status}
+            <span className={cn("inline-block px-2 py-1 rounded-full text-xs font-medium", getPhaseColor(startup.phase))}>
+              {capitalizePhase(startup.phase)}
             </span>
           </div>
         </div>
