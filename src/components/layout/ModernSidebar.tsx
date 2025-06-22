@@ -61,14 +61,14 @@ export default function ModernSidebar({ founder, isOpen, onClose }: ModernSideba
                     <div className="w-2 h-2 bg-white rounded-full" />
                   </div>
                 </div>
-                
+
                 <h2 className="text-lg font-bold text-gray-900 dark:text-white mb-1">
                   {founder.name}
                 </h2>
                 <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
                   {founder.title}
                 </p>
-                
+
                 <div className="flex items-center justify-center gap-1 text-xs text-gray-500 dark:text-gray-400 mb-2">
                   <MapPin size={12} />
                   {founder.location}
@@ -88,6 +88,46 @@ export default function ModernSidebar({ founder, isOpen, onClose }: ModernSideba
                 )}
               </motion.div>
 
+              {/* Social Circle Links */}
+              <div className="flex justify-center gap-3">
+                {founder.website && (
+                  <a
+                    href={founder.website}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 bg-green-100 dark:bg-green-900/30 rounded-full flex items-center justify-center hover:bg-green-200 dark:hover:bg-green-900/50 transition-colors"
+                  >
+                    <ExternalLink size={16} className="text-green-600 dark:text-green-400" />
+                  </a>
+                )}
+                {founder.github && (
+                  <a
+                    href={founder.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 bg-gray-100 dark:bg-gray-700 rounded-full flex items-center justify-center hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
+                  >
+                    <Github size={16} className="text-gray-600 dark:text-gray-400" />
+                  </a>
+                )}
+                <a
+                  href={founder.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 bg-blue-100 dark:bg-blue-900/30 rounded-full flex items-center justify-center hover:bg-blue-200 dark:hover:bg-blue-900/50 transition-colors"
+                >
+                  <Linkedin size={16} className="text-blue-600 dark:text-blue-400" />
+                </a>
+                <a
+                  href={founder.twitter}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 bg-sky-100 dark:bg-sky-900/30 rounded-full flex items-center justify-center hover:bg-sky-200 dark:hover:bg-sky-900/50 transition-colors"
+                >
+                  <Twitter size={16} className="text-sky-600 dark:text-sky-400" />
+                </a>
+              </div>
+
               {/* Quick Stats Grid */}
               <div className="grid grid-cols-2 gap-3">
                 <div className="bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 rounded-xl p-3 border border-green-100 dark:border-green-800">
@@ -97,7 +137,7 @@ export default function ModernSidebar({ founder, isOpen, onClose }: ModernSideba
                     </div>
                     <span className="text-xs font-medium text-green-700 dark:text-green-300">Total Value</span>
                   </div>
-                  <div className="text-lg font-bold text-green-800 dark:text-green-200">
+                  <div className="text-lg blur-md font-bold text-green-800 dark:text-green-200">
                     {founder.totalValuation}
                   </div>
                 </div>
@@ -149,7 +189,8 @@ export default function ModernSidebar({ founder, isOpen, onClose }: ModernSideba
                   </div>
                   <div>
                     <div className="text-xs font-medium text-gray-600 dark:text-gray-400">Total Funding Raised</div>
-                    <div className="text-xl font-bold gradient-text">{founder.totalFunding}</div>
+                    <div className="text-xl font-bold gradient-text blur-sm   transition-all duration-200">{founder.totalFunding}</div>
+
                   </div>
                 </div>
                 <div className="text-xs text-gray-500 dark:text-gray-400">
@@ -237,7 +278,7 @@ export default function ModernSidebar({ founder, isOpen, onClose }: ModernSideba
                   {founder.bio}
                 </p>
               </div>
-
+              <hr />
               {/* Contact */}
               <div className="space-y-3">
                 <h3 className="text-sm font-semibold text-gray-900 dark:text-white">Connect</h3>
@@ -340,7 +381,7 @@ export default function ModernSidebar({ founder, isOpen, onClose }: ModernSideba
             >
               <X size={20} />
             </button>
-            
+
             <div className="p-6 space-y-6 pt-16">
               {/* Mobile content - same structure as desktop */}
               <div className="text-center border-b border-gray-100 dark:border-gray-800 pb-6">
@@ -367,14 +408,14 @@ export default function ModernSidebar({ founder, isOpen, onClose }: ModernSideba
                     <div className="w-2 h-2 bg-white rounded-full" />
                   </div>
                 </div>
-                
+
                 <h2 className="text-lg font-bold text-gray-900 dark:text-white mb-1">
                   {founder.name}
                 </h2>
                 <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
                   {founder.title}
                 </p>
-                
+
                 <div className="flex items-center justify-center gap-1 text-xs text-gray-500 dark:text-gray-400 mb-2">
                   <MapPin size={12} />
                   {founder.location}
@@ -389,7 +430,7 @@ export default function ModernSidebar({ founder, isOpen, onClose }: ModernSideba
               </div>
 
               {/* Mobile Stats Grid */}
-              <div className="grid grid-cols-2 gap-3">
+              {/* <div className="grid grid-cols-2 gap-3">
                 <div className="bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 rounded-xl p-3 border border-green-100 dark:border-green-800">
                   <div className="flex items-center gap-2 mb-1">
                     <div className="w-6 h-6 bg-green-500 rounded-lg flex items-center justify-center">
@@ -413,7 +454,7 @@ export default function ModernSidebar({ founder, isOpen, onClose }: ModernSideba
                     {founder.projects}
                   </div>
                 </div>
-              </div>
+              </div> */}
 
               {/* Mobile Bio */}
               <div className="bg-gray-50 dark:bg-gray-800/50 rounded-xl p-4">

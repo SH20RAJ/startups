@@ -24,12 +24,24 @@ export default function Home() {
           className="text-center"
         >
           <h1 className="text-4xl font-bold gradient-text mb-4">
-            Startup Portfolio
+            Building the Future, One Startup at a Time
           </h1>
-          <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            A collection of innovative companies and ventures across various industries,
-            each solving unique problems and creating value in the market.
+          <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed">
+            Welcome to my entrepreneurial journey. From AI-powered content creation to mindful wellness companions, 
+            each venture represents a passionate pursuit of innovation. Currently building <span className="font-semibold text-primary">5 startups</span> 
+            that solve real problems and create meaningful impact across diverse industries.
           </p>
+          <div className="mt-6 flex flex-wrap gap-3 justify-center">
+            <span className="px-4 py-2 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-sm font-medium">
+              🚀 Active Builder
+            </span>
+            <span className="px-4 py-2 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-sm font-medium">
+              🤖 AI Enthusiast
+            </span>
+            <span className="px-4 py-2 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-sm font-medium">
+              💡 Problem Solver
+            </span>
+          </div>
         </motion.div>
 
         {/* Stats Overview */}

@@ -25,7 +25,7 @@ export default function Navbar({ onMenuClick }: NavbarProps) {
           
           <div className="flex items-center gap-3">
             <div className="w-8 h-8 bg-gradient-to-br from-orange-400 to-pink-400 rounded-xl flex items-center justify-center shadow-sm">
-              <span className="text-white font-bold text-sm">SC</span>
+              <span className="text-white font-bold text-sm">श</span>
             </div>
             <div className="hidden sm:block">
               <h1 className="font-bold text-lg gradient-text">Shaswat Raj</h1>
@@ -45,8 +45,19 @@ export default function Navbar({ onMenuClick }: NavbarProps) {
             />
           </div>
         </div>
+        {/* Right Side - Actions */}
+        <div className="flex items-center gap-4">
+          {/* <NavbarActions />  */}
+          </div>
+       
+      </div>
+    </motion.nav>
+  );
+}
 
-        {/* Right Side */}
+
+export function NavbarActions() {
+  return (
         <div className="flex items-center gap-3">
           {/* Notifications */}
           <button className="relative p-2.5 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-xl transition-colors">
@@ -70,7 +81,5 @@ export default function Navbar({ onMenuClick }: NavbarProps) {
             </div>
           </button>
         </div>
-      </div>
-    </motion.nav>
   );
 }
