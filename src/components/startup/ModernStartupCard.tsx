@@ -74,6 +74,7 @@ export default function ModernStartupCard({ startup }: ModernStartupCardProps) {
 
   const phaseInfo = getPhaseInfo(startup.phase);
 
+  
   return (
     <motion.div
       whileHover={{ 
