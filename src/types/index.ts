@@ -10,31 +10,52 @@ export interface FounderData {
   totalFunding: string;
   successfulExits: number;
   yearsExperience: number;
+  totalValuation: string;
+  companiesActive: number;
 }
+
+export type StartupPhase = 'ideation' | 'building' | 'fundraising' | 'active' | 'exited' | 'paused';
+export type FundingStage = 'bootstrapped' | 'pre-seed' | 'seed' | 'series-a' | 'series-b' | 'series-c' | 'ipo' | 'acquired';
 
 export interface Startup {
   id: number;
   name: string;
   description: string;
-  status: 'Active' | 'Acquired' | 'Sold' | 'Paused';
+  phase: StartupPhase;
+  fundingStage: FundingStage;
   founded: string;
   funding: string;
+  valuation?: string;
   employees: string;
   industry: string;
   logo: string;
   website: string;
   achievements: string[];
+  buildingProgress?: number; // 0-100 for building phase
+  needsFunding?: boolean;
+  pitchDeckUrl?: string;
+  monthlyRevenue?: string;
+  growthRate?: string;
+  location: string;
+  teamSize: number;
+  keyMetrics: {
+    users?: string;
+    revenue?: string;
+    growth?: string;
+  };
 }
 
 export interface FilterOptions {
-  status: string[];
-  industry: string[];
-  fundingRange: {
-    min: number;
-    max: number;
-  };
-  foundedYear: {
-    min: number;
-    max: number;
-  };
+  phases: StartupPhase[];
+  industries: string[];
+  fundingStages: FundingStage[];
+  searchQuery: string;
+  needsFunding?: boolean;
+}
+
+export interface NavItem {
+  name: string;
+  href: string;
+  icon?: string;
+  current?: boolean;
 }
