@@ -128,6 +128,19 @@ export default function ModernSidebar({ founder, isOpen, onClose }: ModernSideba
                 </a>
               </div>
 
+              {/* Invest Button */}
+              <div className="flex justify-center">
+                <a
+                  href={founder.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-primary to-blue-600 hover:from-primary/90 hover:to-blue-600/90 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-105"
+                >
+                  <TrendingUp size={16} />
+                  <span>Interested in Investing?</span>
+                </a>
+              </div>
+
               {/* Quick Stats Grid */}
               <div className="grid grid-cols-2 gap-3">
                 <div className="bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 rounded-xl p-3 border border-green-100 dark:border-green-800">
@@ -455,6 +468,19 @@ export default function ModernSidebar({ founder, isOpen, onClose }: ModernSideba
                   </div>
                 </div>
               </div> */}
+
+              {/* Mobile Invest Button */}
+              <div className="flex justify-center">
+                <a
+                  href={founder.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-primary to-blue-600 hover:from-primary/90 hover:to-blue-600/90 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-105"
+                >
+                  <TrendingUp size={16} />
+                  <span>Interested in Investing?</span>
+                </a>
+              </div>
 
               {/* Mobile Bio */}
               <div className="bg-gray-50 dark:bg-gray-800/50 rounded-xl p-4">
