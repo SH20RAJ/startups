@@ -72,9 +72,7 @@ export default function ModernStartupCard({ startup }: ModernStartupCardProps) {
     return stages[stage as keyof typeof stages] || stage;
   };
 
-  
   const phaseInfo = getPhaseInfo(startup.phase);
-
 
   return (
     <motion.div
