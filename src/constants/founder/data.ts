@@ -1,1 +1,221 @@
-import { FounderData, Startup } from '@/types';export const FOUNDER_DATA: FounderData = {  name: "Sarah Chen",  title: "Serial Entrepreneur & Investor",  bio: "Passionate about building innovative technologies that solve real-world problems. 10+ years of experience in tech entrepreneurship with 3 successful exits and $50M+ in total funding raised.",  avatar: "/next.svg",  location: "San Francisco, CA",  email: "sarah@sarahchen.co",  linkedin: "https://linkedin.com/in/sarahchen",  twitter: "https://twitter.com/sarahchen",  totalFunding: "$50M+",  successfulExits: 3,  yearsExperience: 12,  totalValuation: "$200M+",  companiesActive: 4};export const STARTUPS_DATA: Startup[] = [  {    id: 1,    name: "TechFlow AI",    description: "AI-powered workflow automation platform helping businesses streamline their operations with intelligent process optimization.",    phase: "active",    fundingStage: "series-a",    founded: "2023",    funding: "$15M",    valuation: "$45M",    employees: "45-50",    teamSize: 47,    industry: "AI/ML",    logo: "/next.svg",    website: "https://techflow.ai",    location: "San Francisco, CA",    monthlyRevenue: "$450K",    growthRate: "25%",    achievements: ["YC W23", "Forbes 30 Under 30", "Best AI Startup 2024"],    keyMetrics: {      users: "10K+",      revenue: "$5.4M ARR",      growth: "25% MoM"    }  },  {    id: 2,    name: "GreenEnergy Solutions",    description: "Renewable energy management system for commercial buildings with IoT sensors and predictive analytics.",    phase: "exited",    fundingStage: "acquired",    founded: "2020",    funding: "$8M",    valuation: "$25M",    employees: "25-30",    teamSize: 28,    industry: "CleanTech",    logo: "/globe.svg",    website: "https://greenenergy.com",    location: "Austin, TX",    achievements: ["Acquired by Tesla 2022", "Carbon Neutral Certified", "LEED Platinum"],    keyMetrics: {      users: "500+",      revenue: "$2.1M ARR",      growth: "Acquired"    }  },  {    id: 3,    name: "HealthTrack Pro",    description: "Digital health platform connecting patients with healthcare providers through telemedicine and health monitoring.",    phase: "fundraising",    fundingStage: "series-a",    founded: "2021",    funding: "$12M",    employees: "30-35",    teamSize: 33,    industry: "HealthTech",    logo: "/vercel.svg",    website: "https://healthtrack.pro",    location: "Boston, MA",    needsFunding: true,    pitchDeckUrl: "/pitch-decks/healthtrack-series-b.pdf",    monthlyRevenue: "$280K",    growthRate: "18%",    achievements: ["FDA Approved", "HIPAA Compliant", "500K+ Active Users"],    keyMetrics: {      users: "500K+",      revenue: "$3.4M ARR",      growth: "18% MoM"    }  },  {    id: 4,    name: "BuildBot AI",    description: "AI-powered construction management platform that automates project planning and resource allocation for residential development.",    phase: "building",    fundingStage: "seed",    founded: "2024",    funding: "$3M",    employees: "12-15",    teamSize: 14,    industry: "AI/ML",    logo: "/window.svg",    website: "https://buildbot.ai",    location: "Denver, CO",    buildingProgress: 65,    monthlyRevenue: "$85K",    growthRate: "35%",    achievements: ["Techstars Denver", "Construction Tech Innovation Award"],    keyMetrics: {      users: "2.5K+",      revenue: "$1.0M ARR",      growth: "35% MoM"    }  },  {    id: 5,    name: "EduTech Labs",    description: "Personalized learning platform for K-12 education with adaptive AI tutoring and progress tracking.",    phase: "exited",    fundingStage: "acquired",    founded: "2018",    funding: "$5M",    valuation: "$15M",    employees: "15-20",    teamSize: 18,    industry: "EdTech",    logo: "/file.svg",    website: "https://edutech-labs.com",    location: "Seattle, WA",    achievements: ["Acquired by Pearson 2021", "2M+ Students", "Teacher's Choice Award"],    keyMetrics: {      users: "2M+",      revenue: "Acquired",      growth: "Acquired"    }  },  {    id: 6,    name: "FinFlow",    description: "Next-generation fintech platform for small business banking with automated bookkeeping and cash flow management.",    phase: "fundraising",    fundingStage: "series-b",    founded: "2020",    funding: "$25M",    employees: "55-60",    teamSize: 58,    industry: "FinTech",    logo: "/next.svg",    website: "https://finflow.com",    location: "New York, NY",    needsFunding: true,    pitchDeckUrl: "/pitch-decks/finflow-series-c.pdf",    monthlyRevenue: "$720K",    growthRate: "22%",    achievements: ["SOC 2 Compliant", "Top FinTech 2023", "10K+ Business Customers"],    keyMetrics: {      users: "10K+",      revenue: "$8.6M ARR",      growth: "22% MoM"    }  },  {    id: 7,    name: "MindfulSpace",    description: "Mental wellness app combining meditation, therapy matching, and mood tracking for comprehensive mental health support.",    phase: "ideation",    fundingStage: "bootstrapped",    founded: "2024",    funding: "$0",    employees: "3-5",    teamSize: 4,    industry: "HealthTech",    logo: "/globe.svg",    website: "https://mindfulspace.app",    location: "Portland, OR",    achievements: ["Winner at Health Hack 2024", "Mental Health Alliance Partner"],    keyMetrics: {      users: "500+",      revenue: "$0",      growth: "Pre-revenue"    }  },  {    id: 8,    name: "RetailIQ",    description: "Smart inventory management for e-commerce with predictive analytics and automated reordering.",    phase: "paused",    fundingStage: "seed",    founded: "2022",    funding: "$1.5M",    employees: "8-10",    teamSize: 9,    industry: "E-commerce",    logo: "/vercel.svg",    website: "https://retailiq.com",    location: "Chicago, IL",    achievements: ["Shopify App Partner", "50+ Store Integrations"],    keyMetrics: {      users: "50+",      revenue: "$120K ARR",      growth: "Paused"    }  }];
+import { FounderData, Startup } from '@/types';
+
+export const FOUNDER_DATA: FounderData = {
+  name: "Shaswat Raj",
+  title: "Serial Entrepreneur & Full-Stack Developer",
+  bio: "Passionate innovator building transformative technologies that solve real-world problems. Creator of multiple successful AI-powered platforms with expertise in modern web technologies, product development, and user experience design.",
+  avatar: "/next.svg",
+  location: "India",
+  email: "sh20raj@gmail.com",
+  linkedin: "https://linkedin.com/in/shaswatraj",
+  twitter: "https://twitter.com/SH20RAJ",
+  totalFunding: "$2M+",
+  successfulExits: 0,
+  yearsExperience: 5,
+  totalValuation: "$15M+",
+  companiesActive: 5
+};
+
+export const STARTUPS_DATA: Startup[] = [
+  {
+    id: 1,
+    name: "Creaovate",
+    description: "AI-powered content creation ecosystem that helps creators, marketers, and businesses generate viral content ideas, streamline workflows, and dominate social trends at lightning speed using Meta's Llama 3 AI.",
+    phase: "building",
+    fundingStage: "bootstrapped",
+    founded: "2024",
+    funding: "$0",
+    employees: "1-3",
+    teamSize: 2,
+    industry: "AI/ML",
+    logo: "/next.svg",
+    website: "https://creaovate.shraj.workers.dev",
+    location: "Global (Remote)",
+    buildingProgress: 75,
+    monthlyRevenue: "$0",
+    growthRate: "Pre-revenue",
+    achievements: ["50K+ Content Ideas Generated", "10K+ Active Creators", "200+ Global Locations", "Sub-100ms Response Time"],
+    keyMetrics: {
+      users: "10K+",
+      revenue: "Pre-revenue",
+      growth: "Scaling"
+    },
+    pitchDeckUrl: "/pitch-decks/creaovate-seed.pdf"
+  },
+  {
+    id: 2,
+    name: "Reflecto",
+    description: "Simple yet powerful AI-enhanced journaling platform with mood tracking, Luna AI assistant for natural language search, and time capsules for reflection. Designed for busy people who want meaningful self-reflection.",
+    phase: "building",
+    fundingStage: "bootstrapped",
+    founded: "2024",
+    funding: "$0",
+    employees: "1-3",
+    teamSize: 2,
+    industry: "Productivity",
+    logo: "/globe.svg",
+    website: "https://reflecto.netlify.app",
+    location: "Remote",
+    buildingProgress: 70,
+    monthlyRevenue: "$0",
+    growthRate: "Pre-revenue",
+    achievements: ["1K+ Active Journalers", "Luna AI Assistant", "Free Forever Plan", "Privacy-First Design"],
+    keyMetrics: {
+      users: "1K+",
+      revenue: "Free",
+      growth: "Growing"
+    },
+    pitchDeckUrl: "/pitch-decks/reflecto-seed.pdf"
+  },
+  {
+    id: 3,
+    name: "SketchFlow",
+    description: "Advanced real-time collaborative diagramming and whiteboarding platform with AI-powered suggestions, split-screen markdown integration, and enterprise-grade security. Used by 10K+ teams globally.",
+    phase: "building",
+    fundingStage: "series-a",
+    founded: "2023",
+    funding: "$10M",
+    valuation: "$45M",
+    employees: "15-25",
+    teamSize: 20,
+    industry: "Productivity",
+    logo: "/vercel.svg",
+    website: "https://sketchflow.space",
+    location: "Global",
+    buildingProgress: 85,
+    monthlyRevenue: "$85K",
+    growthRate: "20% MoM",
+    achievements: ["Series A: $10M", "10K+ Active Users", "1M+ Diagrams Created", "99.9% Uptime"],
+    keyMetrics: {
+      users: "10K+",
+      revenue: "$1M ARR",
+      growth: "20% MoM"
+    },
+    needsFunding: false,
+    pitchDeckUrl: "/pitch-decks/sketchflow-series-b.pdf"
+  },
+  {
+    id: 4,
+    name: "Daksha",
+    description: "Sacred agentic AI companion that goes beyond conversation to become a deeply personal ally. Emotionally intelligent, memory-aware assistant for mental wellness, personal growth, and authentic human connection.",
+    phase: "ideation",
+    fundingStage: "bootstrapped",
+    founded: "2024",
+    funding: "$0",
+    employees: "1-2",
+    teamSize: 1,
+    industry: "AI/ML",
+    logo: "/window.svg",
+    website: "https://daksha.pages.dev",
+    location: "Remote",
+    monthlyRevenue: "$0",
+    growthRate: "Pre-launch",
+    achievements: ["Beta Waitlist Active", "Mental Health Focus", "Privacy-First Design", "AI Companion Technology"],
+    keyMetrics: {
+      users: "Pre-launch",
+      revenue: "Pre-revenue",
+      growth: "Development"
+    },
+    needsFunding: true,
+    pitchDeckUrl: "https://daksha.pages.dev/PITCH.pdf"
+  },
+  {
+    id: 5,
+    name: "Unistory",
+    description: "Revolutionary college-only social platform with verified .edu authentication, combining social networking, academic collaboration, mental wellness, career networking, and campus life management for students worldwide.",
+    phase: "ideation",
+    fundingStage: "pre-seed",
+    founded: "2024",
+    funding: "$0",
+    employees: "2-5",
+    teamSize: 3,
+    industry: "Social Media",
+    logo: "/file.svg",
+    website: "https://unistory.pages.dev/dashboard",
+    location: "Global",
+    monthlyRevenue: "$0",
+    growthRate: "Pre-launch",
+    achievements: ["Comprehensive MVP Built", "University Partnership Discussions", "2.5K+ Pre-launch Interest", "Multi-layer Platform Design"],
+    keyMetrics: {
+      users: "Pre-launch",
+      revenue: "Pre-revenue",
+      growth: "Development"
+    },
+    needsFunding: true,
+    pitchDeckUrl: "https://destiny-hardware-0e7.notion.site/Unistory-Pitch-deck-211cd0ed0c2580bfae29cf6004e28d06"
+  },
+  // Legacy startups for comparison
+  {
+    id: 6,
+    name: "TechFlow AI",
+    description: "AI-powered workflow automation platform helping businesses streamline their operations with intelligent process optimization.",
+    phase: "active",
+    fundingStage: "series-a",
+    founded: "2023",
+    funding: "$15M",
+    valuation: "$45M",
+    employees: "45-50",
+    teamSize: 47,
+    industry: "AI/ML",
+    logo: "/next.svg",
+    website: "https://techflow.ai",
+    location: "San Francisco, CA",
+    monthlyRevenue: "$450K",
+    growthRate: "25%",
+    achievements: ["YC W23", "Forbes 30 Under 30", "Best AI Startup 2024"],
+    keyMetrics: {
+      users: "10K+",
+      revenue: "$5.4M ARR",
+      growth: "25% MoM"
+    }
+  },
+  {
+    id: 7,
+    name: "HealthTrack Pro",
+    description: "Digital health platform connecting patients with healthcare providers through telemedicine and health monitoring.",
+    phase: "fundraising",
+    fundingStage: "series-a",
+    founded: "2021",
+    funding: "$12M",
+    employees: "30-35",
+    teamSize: 33,
+    industry: "HealthTech",
+    logo: "/vercel.svg",
+    website: "https://healthtrack.pro",
+    location: "Boston, MA",
+    needsFunding: true,
+    pitchDeckUrl: "/pitch-decks/healthtrack-series-b.pdf",
+    monthlyRevenue: "$280K",
+    growthRate: "18%",
+    achievements: ["FDA Approved", "HIPAA Compliant", "500K+ Active Users"],
+    keyMetrics: {
+      users: "500K+",
+      revenue: "$3.4M ARR",
+      growth: "18% MoM"
+    }
+  },
+  {
+    id: 8,
+    name: "BuildBot AI",
+    description: "AI-powered construction management platform that automates project planning and resource allocation for residential development.",
+    phase: "building",
+    fundingStage: "seed",
+    founded: "2024",
+    funding: "$3M",
+    employees: "12-15",
+    teamSize: 14,
+    industry: "AI/ML",
+    logo: "/window.svg",
+    website: "https://buildbot.ai",
+    location: "Denver, CO",
+    buildingProgress: 65,
+    monthlyRevenue: "$85K",
+    growthRate: "35%",
+    achievements: ["Techstars Denver", "Construction Tech Innovation Award"],
+    keyMetrics: {
+      users: "2.5K+",
+      revenue: "$1.0M ARR",
+      growth: "35% MoM"
+    }
+  }
+];

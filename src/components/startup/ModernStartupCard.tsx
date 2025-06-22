@@ -219,7 +219,10 @@ export default function ModernStartupCard({ startup, onViewDetails }: ModernStar
         <motion.button
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
-          onClick={() => onViewDetails(startup.id)}
+          onClick={() => {
+            const startupSlug = startup.name.toLowerCase().replace(/\s+/g, '');
+            window.location.href = `/startups/${startupSlug}`;
+          }}
           className="cute-btn-primary flex-1"
         >
           <Eye size={14} />
