@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import { FOUNDER_DATA } from '@/constants';
 import ModernLayout from '@/components/layout/ModernLayout';
-import { ArrowRight, CheckCircle, Target, Users, Zap, TrendingUp, Shield, Award } from 'lucide-react';
+import { ArrowRight, CheckCircle, Target, Users, Zap, TrendingUp, Shield, Award, BookOpen } from 'lucide-react';
 import Link from 'next/link';
 
 export default function AboutPage() {
@@ -70,6 +70,40 @@ export default function AboutPage() {
             This portfolio represents years of dedication, technical expertise, and a proven track record 
             of turning ideas into reality.
           </p>
+        </motion.div>
+
+        {/* Newsletter CTA - Priority */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.05 }}
+          className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 text-white text-center shadow-lg"
+        >
+          <div className="max-w-3xl mx-auto">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/20 rounded-full text-white text-sm font-medium mb-4">
+              <BookOpen className="w-4 h-4" />
+              Priority Access
+            </div>
+            <h2 className="text-3xl font-bold mb-4">
+              Get Exclusive Startup Insights
+            </h2>
+            <p className="text-xl text-blue-100 mb-6">
+              Join my Substack newsletter for behind-the-scenes updates, investment opportunities, 
+              and exclusive insights into my startup journey. First access to funding rounds and partnerships.
+            </p>
+            <Link
+              href="https://sh20raj.substack.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-white text-blue-600 font-bold rounded-xl hover:bg-blue-50 transition-colors shadow-lg"
+            >
+              Subscribe to Newsletter
+              <ArrowRight className="w-5 h-5" />
+            </Link>
+            <p className="text-sm text-blue-200 mt-4">
+              🔥 Join 1000+ investors and entrepreneurs • Weekly insights • No spam, ever
+            </p>
+          </div>
         </motion.div>
 
         {/* About Me Section */}
@@ -227,15 +261,23 @@ export default function AboutPage() {
             Ready to Invest in the Future?
           </h2>
           <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-            Join me in building the next generation of innovative startups. Let's create something extraordinary together.
+            Join me in building the next generation of innovative startups. Start with my newsletter for exclusive insights and investment opportunities.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
+              href="https://sh20raj.substack.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold rounded-xl transition-all shadow-lg"
+            >
+              📧 Subscribe to Newsletter
+              <ArrowRight className="w-5 h-5" />
+            </Link>
+            <Link
               href={FOUNDER_DATA.linkedin || '#'}
-              className="inline-flex items-center gap-2 px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl transition-colors"
+              className="inline-flex items-center gap-2 px-8 py-4 border border-gray-600 hover:border-gray-500 text-white font-semibold rounded-xl transition-colors"
             >
               Connect on LinkedIn
-              <ArrowRight className="w-5 h-5" />
             </Link>
             <Link
               href="/"

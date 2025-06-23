@@ -66,6 +66,14 @@ export default function Navbar({ onMenuClick, onSearchChange }: NavbarProps) {
         <div className="flex items-center gap-3">
           {/* Navigation Links */}
           <Link 
+            href="https://sh20raj.substack.com/" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden lg:block px-4 py-2 text-sm font-medium bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg hover:opacity-90 transition-opacity"
+          >
+            Newsletter
+          </Link>
+          <Link 
             href="/about" 
             className="hidden md:block px-4 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors"
           >

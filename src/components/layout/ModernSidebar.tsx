@@ -141,6 +141,19 @@ export default function ModernSidebar({ founder, isOpen, onClose }: ModernSideba
                 </a>
               </div>
 
+              {/* Newsletter Button */}
+              <div className="flex justify-center">
+                <a
+                  href="https://sh20raj.substack.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-105"
+                >
+                  <Mail size={16} />
+                  <span>📧 Subscribe Newsletter</span>
+                </a>
+              </div>
+
               {/* Quick Stats Grid */}
               <div className="grid grid-cols-2 gap-3">
                 <div className="bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 rounded-xl p-3 border border-green-100 dark:border-green-800">
@@ -479,6 +492,19 @@ export default function ModernSidebar({ founder, isOpen, onClose }: ModernSideba
                 >
                   <TrendingUp size={16} />
                   <span>Interested in Investing?</span>
+                </a>
+              </div>
+
+              {/* Mobile Newsletter Button */}
+              <div className="flex justify-center">
+                <a
+                  href="https://sh20raj.substack.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-105"
+                >
+                  <Mail size={16} />
+                  <span>📧 Subscribe Newsletter</span>
                 </a>
               </div>
 
