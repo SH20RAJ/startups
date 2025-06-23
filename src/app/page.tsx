@@ -12,10 +12,15 @@ export default function Home() {
     filteredStartups,
     clearAllFilters,
     activeFiltersCount,
+    setSearchQuery,
   } = useStartupFilters({ startups: STARTUPS_DATA });
 
+  const handleSearchChange = (query: string) => {
+    setSearchQuery(query);
+  };
+
   return (
-    <ModernLayout founder={FOUNDER_DATA}>
+    <ModernLayout founder={FOUNDER_DATA} onSearchChange={handleSearchChange}>
       <div className="space-y-8">
         {/* Header Section */}
         <HomeHeader />

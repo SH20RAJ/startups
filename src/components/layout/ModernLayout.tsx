@@ -7,9 +7,10 @@ import { FounderData } from '@/types';
 interface ModernLayoutProps {
   founder: FounderData;
   children: ReactNode;
+  onSearchChange?: (query: string) => void;
 }
 
-export default function ModernLayout({ founder, children }: ModernLayoutProps) {
+export default function ModernLayout({ founder, children, onSearchChange }: ModernLayoutProps) {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const toggleSidebar = () => {
@@ -23,7 +24,7 @@ export default function ModernLayout({ founder, children }: ModernLayoutProps) {
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
       {/* Fixed Navbar */}
-      <Navbar onMenuClick={toggleSidebar} />
+      <Navbar onMenuClick={toggleSidebar} onSearchChange={onSearchChange} />
 
       {/* Fixed Sidebar */}
       <ModernSidebar

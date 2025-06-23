@@ -1,11 +1,25 @@
+'use client';
+
 import { Search, Bell, User, Menu, Settings } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { useState } from 'react';
+import Link from 'next/link';
+import ThemeToggle from './ThemeToggle';
 
 interface NavbarProps {
   onMenuClick: () => void;
+  onSearchChange?: (query: string) => void;
 }
 
-export default function Navbar({ onMenuClick }: NavbarProps) {
+export default function Navbar({ onMenuClick, onSearchChange }: NavbarProps) {
+  const [searchQuery, setSearchQuery] = useState('');
+
+  const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const query = e.target.value;
+    setSearchQuery(query);
+    onSearchChange?.(query);
+  };
+
   return (
     <motion.nav
       initial={{ opacity: 0, y: -20 }}
@@ -23,7 +37,7 @@ export default function Navbar({ onMenuClick }: NavbarProps) {
             <Menu size={20} />
           </button>
           
-          <div className="flex items-center gap-3">
+          <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
             <div className="w-8 h-8 bg-gradient-to-br from-orange-400 to-pink-400 rounded-xl flex items-center justify-center shadow-sm">
               <span className="text-white font-bold text-sm">श</span>
             </div>
@@ -31,7 +45,7 @@ export default function Navbar({ onMenuClick }: NavbarProps) {
               <h1 className="font-bold text-lg gradient-text">Shaswat Raj</h1>
               <p className="text-xs text-gray-600 dark:text-gray-400">Portfolio</p>
             </div>
-          </div>
+          </Link>
         </div>
 
         {/* Center - Search Bar */}
@@ -41,33 +55,30 @@ export default function Navbar({ onMenuClick }: NavbarProps) {
             <input
               type="text"
               placeholder="Search startups, industries, locations..."
+              value={searchQuery}
+              onChange={handleSearchChange}
               className="w-full pl-12 pr-4 py-3 bg-gray-100 dark:bg-gray-800 border-0 rounded-2xl text-sm focus:outline-none focus:ring-2 focus:ring-primary/20 focus:bg-white dark:focus:bg-gray-700 transition-all placeholder-gray-500 dark:placeholder-gray-400"
             />
           </div>
         </div>
+
         {/* Right Side - Actions */}
-        <div className="flex items-center gap-4">
-          {/* <NavbarActions />  */}
-          </div>
-       
-      </div>
-    </motion.nav>
-  );
-}
-
-
-export function NavbarActions() {
-  return (
         <div className="flex items-center gap-3">
+          {/* Navigation Links */}
+          <Link 
+            href="/about" 
+            className="hidden md:block px-4 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors"
+          >
+            About
+          </Link>
+          
+          {/* Theme Toggle */}
+          <ThemeToggle />
+
           {/* Notifications */}
           <button className="relative p-2.5 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-xl transition-colors">
             <Bell size={20} className="text-gray-600 dark:text-gray-400" />
             <span className="absolute top-1 right-1 w-2 h-2 bg-red-500 rounded-full"></span>
-          </button>
-
-          {/* Settings */}
-          <button className="p-2.5 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-xl transition-colors">
-            <Settings size={20} className="text-gray-600 dark:text-gray-400" />
           </button>
 
           {/* Profile */}
@@ -76,10 +87,12 @@ export function NavbarActions() {
               <User size={16} className="text-white" />
             </div>
             <div className="hidden md:block text-left">
-              <div className="text-sm font-medium text-gray-900 dark:text-white">You</div>
-              <div className="text-xs text-gray-500 dark:text-gray-400">Admin</div>
+              <div className="text-sm font-medium text-gray-900 dark:text-white">Investor</div>
+              <div className="text-xs text-gray-500 dark:text-gray-400">Guest</div>
             </div>
           </button>
         </div>
+      </div>
+    </motion.nav>
   );
 }
