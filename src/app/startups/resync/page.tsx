@@ -6,7 +6,7 @@ import ModernLayout from '@/components/layout/ModernLayout';
 
 export default function ResyncDetailPage() {
   const startup = STARTUPS_DATA.find(s => s.name === 'Resync');
-  
+
   if (!startup) {
     return <div>Startup not found</div>;
   }

@@ -36,7 +36,7 @@ export default function Navbar({ onMenuClick, onSearchChange }: NavbarProps) {
           >
             <Menu size={20} />
           </button>
-          
+
           <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
             <div className="w-8 h-8 bg-gradient-to-br from-orange-400 to-pink-400 rounded-xl flex items-center justify-center shadow-sm">
               <span className="text-white font-bold text-sm">श</span>
@@ -65,21 +65,21 @@ export default function Navbar({ onMenuClick, onSearchChange }: NavbarProps) {
         {/* Right Side - Actions */}
         <div className="flex items-center gap-3">
           {/* Navigation Links */}
-          <Link 
-            href="https://sh20raj.substack.com/" 
+          <Link
+            href="https://sh20raj.substack.com/"
             target="_blank"
             rel="noopener noreferrer"
             className="hidden lg:block px-4 py-2 text-sm font-medium bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg hover:opacity-90 transition-opacity"
           >
             Newsletter
           </Link>
-          <Link 
-            href="/about" 
+          <Link
+            href="/about"
             className="hidden md:block px-4 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors"
           >
             About
           </Link>
-          
+
           {/* Theme Toggle */}
           <ThemeToggle />
 

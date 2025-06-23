@@ -24,22 +24,6 @@ export default function Home() {
       <div className="space-y-8">
         {/* Header Section */}
         <HomeHeader />
-
-        {/* Stats Overview */}
-        <HomeStats startups={STARTUPS_DATA} />
-
-        {/* Filters - Hidden for now */}
-        {/* <ModernFilters
-          filters={filters}
-          onPhaseChange={setPhaseFilter}
-          onIndustryChange={setIndustryFilter}
-          onFundingStageChange={setFundingStageFilter}
-          onNeedsFundingChange={setNeedsFundingFilter}
-          onSearchChange={setSearchQuery}
-          onClearAll={clearAllFilters}
-          activeFiltersCount={activeFiltersCount}
-        /> */}
-
         {/* Startups Grid */}
         <motion.div
           initial={{ opacity: 0 }}
@@ -88,6 +72,22 @@ export default function Home() {
             </div>
           )}
         </motion.div>
+        {/* Stats Overview */}
+        <HomeStats startups={STARTUPS_DATA} />
+
+        {/* Filters - Hidden for now */}
+        {/* <ModernFilters
+          filters={filters}
+          onPhaseChange={setPhaseFilter}
+          onIndustryChange={setIndustryFilter}
+          onFundingStageChange={setFundingStageFilter}
+          onNeedsFundingChange={setNeedsFundingFilter}
+          onSearchChange={setSearchQuery}
+          onClearAll={clearAllFilters}
+          activeFiltersCount={activeFiltersCount}
+        /> */}
+
+
 
         {/* Results Footer */}
         {filteredStartups.length > 0 && (

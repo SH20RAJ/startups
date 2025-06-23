@@ -1,8 +1,8 @@
 # Daksha
 
-**Website:** https://daksha.pages.dev/  
-**Pitch Deck (PDF):** https://daksha.pages.dev/PITCH.pdf
-Here’s a **Pitch** and a **Detailed Product Page** draft for [Daksha](https://daksha.pages.dev/):
+**Website:** https://daksha.live/  
+**Pitch Deck (PDF):** https://daksha.live/PITCH.pdf
+Here’s a **Pitch** and a **Detailed Product Page** draft for [Daksha](https://daksha.live/):
 
 ---
 
@@ -58,7 +58,7 @@ Daksha is on a mission to redefine how humans interact with AI—not as tools, b
 
 ## 🚀 Try Daksha
 
-👉 [Start Your Journey](https://daksha.pages.dev/)
+👉 [Start Your Journey](https://daksha.live/)
 
 ---
 

@@ -25,11 +25,11 @@ export default function HomeHeader() {
             </p>
           </div>
         </div>
-        
+
         {/* Main description in Notion block style */}
         <div className="bg-gray-50 dark:bg-gray-800/50 rounded-lg p-6 border border-gray-200 dark:border-gray-700 shadow-sm">
           <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-base">
-            Welcome to my entrepreneurial journey. From AI-powered content creation to mindful wellness companions, 
+            Welcome to my entrepreneurial journey. From AI-powered content creation to mindful wellness companions,
             each venture represents a passionate pursuit of innovation. Currently building{' '}
             <span className="bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-0.5 rounded font-medium">
               5+ startups
@@ -58,26 +58,7 @@ export default function HomeHeader() {
       {/* Notion-style divider */}
       <div className="w-full h-px bg-gray-200 dark:bg-gray-700 mb-8"></div>
 
-      {/* Newsletter CTA */}
-      <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 border border-blue-200 dark:border-blue-800 rounded-lg p-6 text-center mb-8">
-        <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-2">
-          🚀 Get Exclusive Updates
-        </h3>
-        <p className="text-gray-600 dark:text-gray-400 mb-4">
-          Join my newsletter for behind-the-scenes insights, investment opportunities, and startup updates.
-        </p>
-        <a
-          href="https://sh20raj.substack.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-medium rounded-lg hover:opacity-90 transition-opacity"
-        >
-          Subscribe Now
-          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-          </svg>
-        </a>
-      </div>
+     
     </motion.div>
   );
 }

@@ -67,7 +67,7 @@ export default function ModernStartupCard({ startup }: ModernStartupCardProps) {
 
   return (
     <motion.div
-      whileHover={{ 
+      whileHover={{
         y: -2,
         transition: { duration: 0.2, ease: "easeOut" }
       }}
@@ -93,13 +93,13 @@ export default function ModernStartupCard({ startup }: ModernStartupCardProps) {
             />
             <span className="hidden text-2xl">
               {startup.phase === 'building' ? '🔨' :
-               startup.phase === 'fundraising' ? '💰' :
-               startup.phase === 'active' ? '🚀' :
-               startup.phase === 'exited' ? '✨' :
-               startup.phase === 'ideation' ? '💡' : '⏸️'}
+                startup.phase === 'fundraising' ? '💰' :
+                  startup.phase === 'active' ? '🚀' :
+                    startup.phase === 'exited' ? '✨' :
+                      startup.phase === 'ideation' ? '💡' : '⏸️'}
             </span>
           </div>
-          
+
           <div className="flex-1 min-w-0">
             <div className="flex items-center gap-2 mb-2">
               <h3 className="font-semibold text-lg text-gray-900 dark:text-white truncate">
@@ -109,7 +109,7 @@ export default function ModernStartupCard({ startup }: ModernStartupCardProps) {
                 <span className="text-sm">❤️</span>
               )}
             </div>
-            
+
             {/* Phase tag */}
             <div className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-md text-sm font-medium ${phaseInfo.className}`}>
               <span>{phaseInfo.icon}</span>
@@ -169,7 +169,7 @@ export default function ModernStartupCard({ startup }: ModernStartupCardProps) {
                 </span>
               </div>
               <div className="w-full bg-blue-100 dark:bg-blue-900/40 rounded-full h-2">
-                <div 
+                <div
                   className="bg-gradient-to-r from-blue-500 to-blue-600 h-full rounded-full transition-all duration-700"
                   style={{ width: `${startup.buildingProgress}%` }}
                 />
@@ -274,7 +274,7 @@ export default function ModernStartupCard({ startup }: ModernStartupCardProps) {
           >
             View Details
           </a>
-          
+
           <a
             href={startup.website}
             target="_blank"

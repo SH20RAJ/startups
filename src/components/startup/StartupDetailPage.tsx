@@ -87,7 +87,7 @@ export default function StartupDetailPage({ startup }: StartupDetailPageProps) {
                 </p>
               </div>
             </div>
-            
+
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 shrink-0">
               {startup.needsFunding && startup.pitchDeckUrl && (
                 <motion.a
@@ -150,7 +150,7 @@ export default function StartupDetailPage({ startup }: StartupDetailPageProps) {
               </div>
               <div className="text-xs text-gray-600 dark:text-gray-400">Founded</div>
             </div>
-            
+
             <div className="modern-card p-3 md:p-4 text-center hover:shadow-md transition-shadow">
               <div className="flex items-center justify-center gap-1 mb-1">
                 <Users size={16} className="text-blue-400" />
@@ -160,7 +160,7 @@ export default function StartupDetailPage({ startup }: StartupDetailPageProps) {
               </div>
               <div className="text-xs text-gray-600 dark:text-gray-400">Team Size</div>
             </div>
-            
+
             <div className="modern-card p-3 md:p-4 text-center hover:shadow-md transition-shadow">
               <div className="flex items-center justify-center gap-1 mb-1">
                 <DollarSign size={16} className="text-green-400" />
@@ -170,7 +170,7 @@ export default function StartupDetailPage({ startup }: StartupDetailPageProps) {
               </div>
               <div className="text-xs text-gray-600 dark:text-gray-400">Funding</div>
             </div>
-            
+
             <div className="modern-card p-3 md:p-4 text-center hover:shadow-md transition-shadow">
               <div className="flex items-center justify-center gap-1 mb-1">
                 <MapPin size={16} className="text-purple-400" />
@@ -180,7 +180,7 @@ export default function StartupDetailPage({ startup }: StartupDetailPageProps) {
               </div>
               <div className="text-xs text-gray-600 dark:text-gray-400">Location</div>
             </div>
-            
+
             <div className="modern-card p-3 md:p-4 text-center hover:shadow-md transition-shadow">
               <div className="flex items-center justify-center gap-1 mb-1">
                 <TrendingUp size={16} className="text-orange-400" />
@@ -206,11 +206,10 @@ export default function StartupDetailPage({ startup }: StartupDetailPageProps) {
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
-              className={`px-4 md:px-6 py-4 font-medium text-sm transition-colors whitespace-nowrap ${
-                activeTab === tab.id
+              className={`px-4 md:px-6 py-4 font-medium text-sm transition-colors whitespace-nowrap ${activeTab === tab.id
                   ? 'text-orange-600 border-b-2 border-orange-600 bg-orange-50 dark:bg-orange-900/20'
                   : 'text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800/50'
-              }`}
+                }`}
             >
               {tab.label}
             </button>
@@ -269,7 +268,7 @@ export default function StartupDetailPage({ startup }: StartupDetailPageProps) {
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   {startup.achievements.map((achievement, index) => (
-                    <div 
+                    <div
                       key={index}
                       className="bg-green-50 dark:bg-green-900/20 text-green-700 dark:text-green-300 p-3 rounded-lg text-sm font-medium border border-green-200 dark:border-green-800 hover:shadow-sm transition-shadow"
                     >

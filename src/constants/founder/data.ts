@@ -142,7 +142,7 @@ export const STARTUPS_DATA: Startup[] = [
     teamSize: 1,
     industry: "AI/ML",
     logo: "/logos/daksha.svg",
-    website: "https://daksha.pages.dev",
+    website: "https://daksha.live",
     location: "Remote",
     monthlyRevenue: "$0",
     growthRate: "Pre-launch",
@@ -153,7 +153,7 @@ export const STARTUPS_DATA: Startup[] = [
       growth: "Development"
     },
     needsFunding: true,
-    pitchDeckUrl: "https://daksha.pages.dev/PITCH.pdf"
+    pitchDeckUrl: "https://daksha.live/PITCH.pdf"
   },
   {
     id: 5,

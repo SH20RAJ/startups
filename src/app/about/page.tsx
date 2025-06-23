@@ -66,8 +66,8 @@ export default function AboutPage() {
             Why Invest in My Ventures?
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-400 max-w-4xl mx-auto leading-relaxed">
-            I'm Shaswat Raj, a serial entrepreneur building the next generation of innovative startups. 
-            This portfolio represents years of dedication, technical expertise, and a proven track record 
+            I'm Shaswat Raj, a serial entrepreneur building the next generation of innovative startups.
+            This portfolio represents years of dedication, technical expertise, and a proven track record
             of turning ideas into reality.
           </p>
         </motion.div>
@@ -88,7 +88,7 @@ export default function AboutPage() {
               Get Exclusive Startup Insights
             </h2>
             <p className="text-xl text-blue-100 mb-6">
-              Join my Substack newsletter for behind-the-scenes updates, investment opportunities, 
+              Join my Substack newsletter for behind-the-scenes updates, investment opportunities,
               and exclusive insights into my startup journey. First access to funding rounds and partnerships.
             </p>
             <Link
@@ -119,13 +119,13 @@ export default function AboutPage() {
                 About Me
               </h2>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-6">
-                I'm a passionate entrepreneur and technologist with a deep commitment to solving real-world problems 
-                through innovative solutions. My journey spans across multiple industries, from AI-powered content 
+                I'm a passionate entrepreneur and technologist with a deep commitment to solving real-world problems
+                through innovative solutions. My journey spans across multiple industries, from AI-powered content
                 creation to mindful wellness companions.
               </p>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-6">
-                What sets me apart is my hands-on approach to building products. I don't just have ideas – I execute 
-                them. Each startup in my portfolio represents months of dedicated development, user research, and 
+                What sets me apart is my hands-on approach to building products. I don't just have ideas – I execute
+                them. Each startup in my portfolio represents months of dedicated development, user research, and
                 iterative improvement based on real market feedback.
               </p>
               <div className="space-y-3">
@@ -141,7 +141,7 @@ export default function AboutPage() {
               <div className="bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl p-8 text-white">
                 <h3 className="text-2xl font-bold mb-4">My Mission</h3>
                 <p className="leading-relaxed mb-6">
-                  To build technology that meaningfully improves people's lives while creating sustainable, 
+                  To build technology that meaningfully improves people's lives while creating sustainable,
                   profitable businesses that generate significant returns for investors.
                 </p>
                 <div className="grid grid-cols-2 gap-4 text-center">
@@ -173,7 +173,7 @@ export default function AboutPage() {
               Investing in startups requires trust. Here's why I've earned it from partners, users, and stakeholders.
             </p>
           </div>
-          
+
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {trustFactors.map((factor, index) => (
               <motion.div
@@ -212,7 +212,7 @@ export default function AboutPage() {
               Building sustainable, impactful businesses together
             </p>
           </div>
-          
+
           <div className="grid md:grid-cols-3 gap-8 text-center">
             <div>
               <div className="w-16 h-16 bg-purple-100 dark:bg-purple-900/30 rounded-full flex items-center justify-center mx-auto mb-4">
