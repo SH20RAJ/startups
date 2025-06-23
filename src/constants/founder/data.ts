@@ -17,8 +17,8 @@ export const FOUNDER_DATA: FounderData = {
   totalFunding: "$2M+",
   successfulExits: 0,
   yearsExperience: 4,
-  totalValuation: "$15M+",
-  companiesActive: 5,
+  totalValuation: "$17M+",
+  companiesActive: 6,
   skills: [
     "JavaScript (8+ years, 95%)",
     "TypeScript (5+ years, 90%)",
@@ -179,5 +179,32 @@ export const STARTUPS_DATA: Startup[] = [
     },
     needsFunding: true,
     pitchDeckUrl: "https://destiny-hardware-0e7.notion.site/Unistory-Pitch-deck-211cd0ed0c2580bfae29cf6004e28d06"
+  },
+  {
+    id: 6,
+    name: "Resync",
+    description: "AI-powered, ATS-optimized resume builder with real-time scoring. Transform your career with smart resume creation, mobile-first design, and intelligent content suggestions that help job seekers land their dream roles faster.",
+    phase: "building",
+    fundingStage: "seed",
+    founded: "2024",
+    funding: "$0",
+    valuation: "$2M",
+    employees: "1-3",
+    teamSize: 2,
+    industry: "HR Tech",
+    logo: "/logos/resync.svg",
+    website: "https://resync.design",
+    location: "Global (Remote)",
+    buildingProgress: 90,
+    monthlyRevenue: "$0",
+    growthRate: "Pre-revenue",
+    achievements: ["MVP Complete with AI Features", "95% User Satisfaction in Beta", "78% Completion Rate", "Mobile-First Architecture"],
+    keyMetrics: {
+      users: "Beta Testing",
+      revenue: "Pre-revenue",
+      growth: "Ready for Launch"
+    },
+    needsFunding: true,
+    pitchDeckUrl: "/startups/resync.md"
   }
 ];
